@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.Contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.header{
+    background: red;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.header h1{
+    padding: 15px 0px 15px 0px;
+    color: white;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 0px 0px 10px 0px;
+    box-sizing: border-box;
+}
+
+nav a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main1 {
+    width: 70%;
+    background: white;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main1 img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+aside{
+    width: 30%;
+    float: left;
+    background: red;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.main2 {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main2 img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer{
+    background: black;
+    max-width: 1000px;
+    margin: 0px 20px 10px 20px;
+    padding: 10px 0px 10px 0px;
+    box-sizing: border-box;
+}
+
+footer p{
+    color: white;
+    padding: 10px;
+}
+
+
+
+/*Estilo del menu*/
+nav a:hover{
+    color: black;
+}

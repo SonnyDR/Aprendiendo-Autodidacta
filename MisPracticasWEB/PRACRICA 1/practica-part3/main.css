@@ -1,0 +1,98 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: white;
+    margin: 20px 0px 0px 0px;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 10px;
+}
+
+nav {
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: black;
+    padding: 10px;
+    margin: 10px ;
+    text-decoration: none;
+}
+
+.Main {
+    background: white;
+    box-sizing: border-box;
+}
+
+.Main h2 {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Main img {
+    width: 20%;
+    height: 300px;
+    max-width: 300px;
+    margin-left: 38px;
+    box-sizing: border-box;
+}
+
+article {
+    background: skyblue;
+    box-sizing: border-box;
+}
+
+article h2{
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 20%;
+    height: 300px;
+    margin: 30px 0px 30px 0px;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+footer {
+    background: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+footer p {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+nav a:hover {
+    border-bottom: 2px solid black;
+}

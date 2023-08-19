@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    height: 125px;
+    text-align: center;
+    background: black;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid white;
+    color: white;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav a {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.Main {
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/*ARTICULO 1*/
+
+.Articulo1 {
+    max-width: 1000px;
+    height: 250px;
+    margin: 20px 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.Articulo1 img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.Articulo1 p {
+    font-size: 15px;
+    padding: 50px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+/*ARTICULO 2*/
+
+.Articulo2 {
+    max-width: 1000px;
+    height: 250px;
+    margin: 20px 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.Articulo2 img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.Articulo2 p {
+    font-size: 15px;
+    padding: 50px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+
+/*ARTICULO 3*/
+
+.Articulo3 {
+    max-width: 1000px;
+    height: 250px;
+    margin: 20px 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.Articulo3 img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.Articulo3 p {
+    font-size: 15px;
+    padding: 50px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    background: black;
+    color: white;
+    margin: 0px 0px 10px 0px;
+    box-sizing: border-box;
+}
+
+footer p {
+    padding: 20px;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+    
+    .Contenedor{
+        width: 100%;
+    }
+    
+    header{
+        height: 359px;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        margin: 0px;
+        display: grid;
+        box-sizing: border-box;
+    }
+    
+    /*ARTICULO 1*/
+    
+    .Articulo1 {
+        height: 320px;
+    }
+    
+    .Articulo1 img{
+        width: 40%;
+        height: 200px;
+        float: right;
+    }
+    
+    .Articulo1 p{
+        font-size: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    /*ARTICULO 2*/
+    
+    .Articulo2 {
+        height: 320px;
+    }
+    
+    .Articulo2 img{
+        width: 40%;
+        height: 200px;
+        float: right;
+    }
+    
+    .Articulo2 p{
+        font-size: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    /*ARTICULO 3*/
+    
+    .Articulo3 {
+        height: 320px;
+    }
+    
+    .Articulo3 img{
+        width: 40%;
+        height: 200px;
+        float: right;
+    }
+    
+    .Articulo3 p{
+        font-size: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}

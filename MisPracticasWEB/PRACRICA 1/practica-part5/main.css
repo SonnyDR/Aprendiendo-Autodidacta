@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(img/foddo-portada.jpg);
+    background-size: cover;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    background: black;
+    position: absolute;
+    display: inline;
+    padding: 20px;
+    top: 26%;
+    left: 33%;
+    right: 33%;
+    box-sizing: border-box;
+}
+
+nav {
+    position: relative;
+    text-align: center;
+    top: 45%;
+    box-sizing: border-box;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/*SECTION 1*/
+
+.main{
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+
+.articulo1{
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.articulo1 h2 {
+    background: black;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.articulo1 img{
+    width: 23%;
+    height: 320px;
+    max-width: 400px;
+    padding: 10px;
+    margin-left: 13px;
+    box-sizing: border-box;
+}
+
+/*SECTION 2*/
+
+.main2 {
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+.articulo2{
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.articulo2 h2{
+    background: black;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.articulo2 img {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.articulo2 p {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*SECTION 3*/
+
+.main3{
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.articulo3{
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.articulo3 img{
+    width: 23%;
+    height: 320px;
+    max-width: 400px;
+    padding: 10px;
+    margin-left: 13px;
+    box-sizing: border-box;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+nav a:hover{
+    background: black;
+    color: white;
+}
+

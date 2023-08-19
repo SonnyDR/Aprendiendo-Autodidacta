@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+}
+
+.peli-principal{
+
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background-image: url(banner-demon.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.peli-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.peli-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+
+.peli-principal .boton {
+    background: rgb(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    font-size: 1.12em;
+    cursor: pointer;
+}
