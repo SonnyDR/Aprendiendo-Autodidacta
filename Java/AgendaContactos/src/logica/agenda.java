@@ -47,11 +47,10 @@ public class agenda {
 	
 	@Override
 	public String toString() {
-		return "---------------------------------------"
-				+"\nEl nombre agendado es: " + nombre + 
+		return	"El nombre agendado es: " + nombre + 
 				"\nEl numero agendado es: " + numero + 
 				"\nEl correo agendado es: " + correo + 
-				"\n-------------------------------------"; 
+				"\n--------------------------------------"; 
 	}
 	
 }

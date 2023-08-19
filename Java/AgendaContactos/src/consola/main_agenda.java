@@ -16,6 +16,8 @@ public class main_agenda {
 		
 		do {
 			System.out.println("1.Agregar Contacto");
+			System.out.println("2.Ver Contactos");
+			System.out.println("3.Remover Contactos");
 			System.out.println("0.Salir");
 			System.out.println("Ingrese una opcion: ");
 			op = entrada.nextInt();
@@ -32,11 +34,42 @@ public class main_agenda {
 					System.out.println("Ingrese el correo a agendar: ");
 					String correo = entrada.next();
 					
+					agenda contactos = new agenda(nombre,numero,correo);
+					lista.add(contactos);
+					
+					System.out.println("-------- Contacto numero: " + i + " ---------");
+					System.out.println(contactos.toString());
+					
+					System.out.println("Quiere seguir agregando contactos? " +
+					"\n1.Si" + 
+					"\n2.No" + 
+					"\n---------------------------------------");
+					
+					System.out.println("Respuesta: ");
+					int respuesta = entrada.nextInt();
+					
+					if (respuesta == 2) {				
+						
+						System.out.println("--------------------------------------------"
+								+ "\nEl numero de contactos agendados fueron: " + lista.size() + 
+								"\n---------------------------------------------");
+						break;
+					} 
+					
 				}
-				
 				break;
+			
+			case 2:
+				System.out.println("Proximamente");
+				break;
+			
+			case 3:
+				System.out.println("Proximamante");
+				break;
+				
 
 			case 0:
+				System.out.println("Agenda Cerrada.!!");
 				break;
 			}
 			

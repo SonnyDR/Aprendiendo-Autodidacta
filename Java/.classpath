@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="10practico/src"/>
+	<classpathentry kind="src" path="11practico/src"/>
+	<classpathentry kind="src" path="12practico/JavaApplication2/src"/>
+	<classpathentry kind="src" path="1practico/src"/>
+	<classpathentry kind="src" path="2practico/src"/>
+	<classpathentry kind="src" path="3practico/src"/>
+	<classpathentry kind="src" path="4practico/src"/>
+	<classpathentry kind="src" path="5toPRactico/src"/>
+	<classpathentry kind="src" path="6practico/src"/>
+	<classpathentry kind="src" path="7practico/src"/>
+	<classpathentry kind="src" path="8practico/src"/>
+	<classpathentry kind="src" path="9practico/src"/>
+	<classpathentry kind="src" path="AgendaContactos/src"/>
+	<classpathentry kind="output" path="1practico/bin"/>
+</classpath>
