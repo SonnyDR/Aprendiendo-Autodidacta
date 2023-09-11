@@ -25,7 +25,7 @@ body{
     text-transform:uppercase;
 }
 
-.box input[type="text"] , input[type="password"] {
+.box .campo-login {
     border: 0px;
     color: white;
     background: none;
@@ -40,24 +40,28 @@ body{
     transition: 0.25s;
 }
 
-.box input[type="text"]:focus , input[type="password"]:focus{
+.box .campo-login:focus{
     width: 250px;
     border:2px solid #2ecc71;
 }
 
-.box input[type="submit"] {
+.box .acesso {
     border: 0;
     background: none;
     color: white;
     border: 2px solid #f9f9f9;
     border-radius: 20px;
-    width: 100px;
+    width: 120px;
     padding: 10px 0px;
+    margin: 0px 10px;
+    transition: all 0.35s;
 }
 
-.box input[type="submit"]:hover {
+.box .acesso:hover {
     width: 120px;
     background: #2ecc71;
     color: black;
     transition: 0.25s;
+    cursor: pointer;
 }
+

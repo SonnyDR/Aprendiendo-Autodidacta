@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    background-color: #FA6080;
+    padding: 30px;
+    
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav h1 a{
+    color: white;
+    font-size: 25px;
+}
+
+.nav .lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.lista li a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.lista li:hover {
+    transform: scale(1.1 , 1.1);
+    transition: all 0.5s;
+}
+
+/*Estilo*/
+.lista li a:hover {
+    border-bottom: 2px solid white;
+    transition: all 0.5s;
+}
+
+/*Imagenes y main*/
+.main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}
+
+article .section1 {
+    margin-top: 20px;
+}
+
+.section1 .cartas-img{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section1 .cartas-img img {
+    width: auto;
+    height: 300px;
+    padding: 10px 10px;
+    object-fit: cover;
+}
+
+/*Efecto imagenes*/
+.section1 .cartas-img img:hover {
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+}
+
+
+/*Section 2*/
+.section2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #FA6080;
+}
+
+.section2 h2 {
+    background-color: #FA6080;
+    padding: 10px;
+    color: white;
+}
+
+.section2 img {
+    width: auto;
+    height: 200px;
+    padding: 15px;
+    float: left;
+}
+
+.section2 p {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 580px) {
+    .section2 img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
