@@ -24,7 +24,7 @@ body{
     background: #191919;
 }
 
-.box h1 {
+.box h1 , .text-coment{
     font-weight: 500px;
     color: white;
     text-transform:uppercase;
@@ -142,4 +142,14 @@ body{
     color: #ddd;
     font-size: 20px;
     font-weight: 800;
+}
+
+/*Imagen advertencia*/
+
+.main .section1 .img-advertencia {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    height: auto;
+    margin-top: 20px;
 }
