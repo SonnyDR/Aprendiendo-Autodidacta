@@ -60,11 +60,34 @@ public class main_agenda {
 				break;
 			
 			case 2:
-				System.out.println("Proximamente");
+				
+				System.out.println("Los contactos agregados fueron: ");
+				System.out.println("\n--------------------------------------");
+				for (int i = 0; i < lista.size(); i++) {
+					System.out.println(lista.get(i).toString());
+				}
+				
 				break;
 			
 			case 3:
-				System.out.println("Proximamante");
+
+				System.out.println("Contactos disponibles:");
+				for (int i = 0; i < lista.size(); i++) {
+					
+					System.out.println("-------- Contacto numero: " + i + " ---------");
+					System.out.println(i + "." + lista.get(i).toString());
+					
+				}
+				
+				System.out.println("Ingrese el numero de contacto a eliminar: ");
+				int opBorrar = entrada.nextInt();
+				
+				if (opBorrar >=0 && opBorrar < lista.size()) {
+					lista.remove(opBorrar);
+					System.out.println("Contacto eliminado");
+				}
+				
+				
 				break;
 				
 
