@@ -18,14 +18,14 @@ function log() {
         alert("Error, Ese no es tu usuario")
     
     } if (emailLogin == obtEmail && passLogin == obtPass) {
-        window.location.href = "/paginas/gerarditoGPT.html";
+        window.location.href = "../paginas/gerarditoGPT.html";
         alert("Correcto, Redirecionando...")
     }
 }
 
 function reg() {
     alert("redirecionando a Registrarse...")
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
     
 }
 

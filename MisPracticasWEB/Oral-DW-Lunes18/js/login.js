@@ -19,7 +19,7 @@ registerBtn.addEventListener('click', function () {
         return false;
     
     } else {
-        window.location.href = "paginas/gerarditoGPT.html"
+        window.location.href = "../paginas/gerarditoGPT.html"
         alert("Formulario Correcto, Redirecionando a GerarditoGPT....")
         
         //GUARDAR VALORES
@@ -32,6 +32,6 @@ registerBtn.addEventListener('click', function () {
 });
 
 function logRegister() {
-    window.location.href = "/paginas/login.html";
+    window.location.href = "../paginas/login.html";
     alert("Redirecionando a Iniciar Seccion...")
 }
