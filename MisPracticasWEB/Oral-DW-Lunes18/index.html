@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>GerarditoGPT</title>
+    <title>GerarditoGPT Registrar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="img/favicon.jpg"/>
 </head>
 <body>
    
    <form action="" class="box">
-        <h1>Login</h1>
-       <input type="text" required class="campo-login" placeholder="Name" id="name-login">
-       <input type="text" required class="campo-login" placeholder="Apellido" id="ape-login">
-       <input type="email" required class="campo-login" placeholder="Email" id="email-login">
-       <input type="password" required class="campo-login" placeholder="Password" id="pass-login">
+        <h1>Registrar</h1>
+       <input type="text" required class="campo-login" placeholder="Name" id="name-register">
+       <input type="text" required class="campo-login" placeholder="Apellido" id="ape-register">
+       <input type="email" required class="campo-login" placeholder="Email" id="email-register">
+       <input type="password" required class="campo-login" placeholder="Password" id="pass-register">
        
        <input type="submit" class="acesso" id="register" value="register">
+       <input type="submit" class="acesso" id="logReg" value="Login" onclick="logRegister()">
 
    </form>
     
-   <script src="js/dato.js"></script>
-   <script src="js/login.js"></script>
+   
+   <script src="/js/login.js"></script>
+   <script src="/js/inicioSession.js"></script>
+
 </body>
 </html>
