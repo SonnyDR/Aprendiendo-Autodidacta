@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GerarditoGPT</title>
+    <link rel="icon" type="image/jpg" href="../img/favicon.jpg"/>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <h1><a href="#"><img src="../img/logo-gerardo.png" alt=""></a></h1>
+            
+            <ul class="lista">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="../paginas/demostracion.html">Demostracion</a></li>
+                <li><a href="../paginas/contacto.html">Contactenos</a></li>
+                <li><a href="../index.html">Cerrar session</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article>
+            <section class="section">
+                <h2>Algunos tipos de < inputs ></h2>
+                
+                <pre>
+                    <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"text" </span><span class="col-span-atributo">placeholder=</span><span class="col-span-valor">"Introduce tu nombre" </span><span>/></span>
+                    </code>
+                </pre>
+                <p>un campo para entrada de texto. El control asociado a este campo es un cuadro de texto que permite a los usuarios editar una sola línea de texto sin formato. Los controles de texto son útiles 
+                    para recopilar tiradas cortas de texto como títulos, 
+                    nombres, apellidos, descripciones breves, palabras clave, etiquetas, etc.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"password" </span><span class="col-span-atributo">placeholder=</span><span class="col-span-valor">"Introduce tu contrasenia" </span><span>/></span>
+                        </code>
+                    </pre>
+                    <p>Como su nombre lo indica, una entrada con un tipo de contraseña crea una contraseña. 
+                        Es automáticamente invisible para el usuario, a menos que sea manipulado por JavaScript.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"email" </span><span class="col-span-atributo">placeholder=</span><span class="col-span-valor">"Introduce tu email" </span><span>/></span>
+                        </code>
+                    </pre>
+                    <p>Cualquier entrada con el tipo de correo electrónico define un campo para ingresar una dirección de correo electrónico.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"number" </span><span class="col-span-atributo">placeholder=</span><span class="col-span-valor">"Introduce numeros" </span><span>/></span>             
+                        </code>
+                    </pre>
+                    <p>Este tipo de entrada permite al usuario insertar solo números.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"submit" </span><span class="col-span-atributo">value=</span><span class="col-span-valor">"Enviar" </span><span>/></span>             
+                        </code>
+                    </pre>
+                    <p>Utilice este tipo para agregar un botón de envío a los formularios. 
+                        Cuando un usuario hace clic en él, envía automáticamente el formulario. 
+                        Toma un atributo de valor, que define el texto que aparece dentro del botón.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"search" </span>
+                        </code>
+                    </pre>
+                    <p>La entrada con el tipo de búsqueda define un campo de texto como un tipo de entrada de texto. 
+                        Pero esta vez tiene el único propósito de buscar información. 
+                        Se diferencia de escribir texto en que aparece un botón de cancelar una vez que el usuario comienza a escribir.</p>
+
+                    <pre>
+                        <code>
+        <span><</span><span class="col-span-input">input </span><span class="col-span-atributo">type=</span><span class="col-span-valor">"color" </span>
+                        </code>
+                    </pre>
+                    <p>Los elementos de tipo colorproporcionan un elemento de interfaz de usuario que permite al usuario especificar un color, ya sea mediante una interfaz de selección de color visual o 
+                        ingresando el color en un campo de texto en formato #rrggbb hexadecimal.</p>
+
+            </section>
+
+            <section class="section">
+                <h2>Estilos propios de < input ></h2>
+
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">caret-color <span style="color: #ddd;">: </span><span style="color: coral;">Color</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>Esta propiedad lo que nos permite es cambiar el color de la linea final de nuestro cursor al momento de que estemos escribiendo 
+                    dentro de alguna caja de texto, ya sea un input, textarea, etc. 
+                En lugar de color predeterminado del sistema. Esta propiedad es especialmente util para
+            la personalizacion de la interfaz de usuario y la mejora en elementos de formulario</p>
+
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">cursor <span style="color: #ddd;">: </span><span style="color: coral;">pointer</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>Este cursor muestra la mano esa que aparece cuando el contenido es un hiperenlace, 
+                    mostrando al usuario que ese elemento se 
+                    puede apretar, hacer click, para ir a otro lugar o desencadenar algún tipo de comportamiento</p>
+            
+                <pre>
+                    <code>
+        <span style="color: coral;">Textarea</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">resize <span style="color: #ddd;">: </span><span style="color: coral;">none</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>En CSS existe una propiedad llamada resize ( redimensionar ), y los elementos textarea , por definición tienen resize: both;. O sea: podemos redimensionar 
+                tanto la altura como la anchura del elemento agarrando y estirando 
+                la esquina abajo derecha de este. Para que no se redimensione hay que poner el valor "none"</p>
+
+
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">-webkit-text-security <span style="color: #ddd;">: </span><span style="color: coral;">square</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>Esta propiedad se utiliza principalmente para aplicar un nivel de seguridad al texto, como ocultar caracteres 
+                    sensibles como contraseñas o PIN en un campo de entrada de texto. Ya esta casi obsoleta, ya que no 
+                    todos los navegadores admiten este estilo</p>
+
+            </section>
+
+            <section class="section">
+                <h2>Estilos globales para < Input ></h2>
+
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">padding <span style="color: #ddd;">: </span><span style="color: coral;">10px</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>Las paddingpropiedades CSS se utilizan para generar espacio alrededor 
+                    del contenido de un elemento, dentro de los bordes definidos.</p>
+
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">border <span style="color: #ddd;">: </span><span style="color: coral;">2px solid #fff</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>El estilo de CSS "border" se utiliza para agregar bordes a elementos HTML, como divs, imágenes, botones y otros elementos. Proporciona control sobre el diseño y la apariencia de estos elementos al definir cómo se verán los bordes que los rodean. 
+                    El atributo "border" tiene tres partes principales que se pueden configurar: Grosor, Estilo del Border, Color del borde</p>
+            
+            
+                <pre>
+                    <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">border-radius <span style="color: #ddd;">: </span><span style="color: coral;">20px</span></span>    
+        }</span>
+                    </code>
+                </pre>
+                <p>La propiedad border-radius en CSS se utiliza para controlar la curvatura o 
+                    redondez de las esquinas de un elemento HTML, como un div, un botón o una imagen.</p>
+
+                    <pre>
+                        <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">color <span style="color: #ddd;">: </span><span style="color: coral;">White</span></span>    
+        }</span>
+                        </code>
+                    </pre>
+                    <p>La propiedad CSS color se utiliza para establecer el color del texto dentro de un elemento HTML, como un < input > o cualquier otro elemento que contenga texto. Cuando se aplica a un < input >, 
+                        generalmente se utiliza para definir el color del texto que se muestra dentro del campo de entrada.</p>
+
+                    <pre>
+                        <code>
+        <span style="color: coral;">input</span> <span style="color: yellow;"> {
+            <span style="color: aqua;">width <span style="color: #ddd;">: </span><span style="color: coral;">200px</span></span>    
+        }</span>
+                        </code>
+                    </pre>
+                    <p>La propiedad CSS width se utiliza para establecer el ancho de un elemento HTML, incluido un elemento < input >.
+                         Cuando se aplica a un < input >, controla cuán ancho es el campo de entrada de texto en la página web. Esto puede ser 
+                        útil para ajustar el diseño de tu formulario y controlar el espacio que ocupa un campo de entrada en particular.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <h3>@DERECHOS RESERVADOS:</h3>
+        <h3>Alejo Arias y Lucas Benitez</h3>
+    </footer>
+
+    <!--<script src="/js/login.js"></script>
+   <script src="/js/inicioSession.js"></script>-->
+</body>
+</html>

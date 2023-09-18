@@ -1,0 +1,365 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family:sans-serif;
+    background: #34495e;
+}
+
+.box {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: #191919;
+}
+
+.box h1 , .text-coment{
+    font-weight: 500px;
+    color: white;
+    text-transform:uppercase;
+}
+
+.box .campo-login {
+    border: 0px;
+    color: white;
+    background: none;
+    display: block;
+    text-align: center;
+    width: 200px;
+    border: 2px solid #3498db;
+    outline: none;
+    margin: 20px auto;
+    border-radius: 24px;
+    padding: 14px 10px;
+    transition: 0.25s;
+}
+
+.box .campo-login:focus{
+    width: 250px;
+    border:2px solid #2ecc71;
+}
+
+.box .acesso {
+    border: 0;
+    background: none;
+    color: white;
+    border: 2px solid #f9f9f9;
+    border-radius: 20px;
+    width: 120px;
+    padding: 10px 0px;
+    margin: 0px 10px;
+    transition: all 0.35s;
+}
+
+.box .acesso:hover {
+    width: 120px;
+    background: #2ecc71;
+    color: black;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*ESTILOS PARA GERARDITO*/
+
+/*Header y Nav*/
+.header {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #34495e;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header .nav .lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+.header .nav .lista li{
+    list-style: none;
+}
+
+.header .nav .lista li a {
+    color: white;
+    font-weight: 800;
+}
+
+.header .nav .lista li:hover {
+    transform: scale(1.2 , 1.2);
+    transition: all 0.5s;
+}
+
+.header .nav h1 img {
+    width: auto;
+    height: 60px;
+    margin-left: 30px;
+}
+
+/*Main*/
+
+.main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /*antes era 60*/
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.section {
+    height: auto;
+    margin-top: 30px;
+}
+
+.section pre {
+    overflow-x: auto;
+    background-color: #191919;
+    border: 4px solid #ddd;
+}
+
+.section pre code {
+    color: #ddd;
+    background-color: #191919;
+    font-size: 1.2rem;
+}
+
+.section p{
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 10px;
+}
+
+/*Imagen advertencia*/
+
+.main .section .img-advertencia {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    height: auto;
+    margin-top: 20px;
+}
+
+.main .section h2 {
+    text-align: center;
+    color: #fffafa;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/*COLOR DE LOS SPAN*/
+.col-span-input {
+    color: rgb(61, 106, 230)
+}
+
+.col-span-atributo {
+    color: skyblue;
+}
+
+.col-span-valor{
+    color: coral;
+}
+
+footer {
+    background: #191919;
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+footer h3 {
+    color: rgb(121, 119, 119);
+    padding: 5px;
+}
+
+/*DEMOSTRACION DE LOS INPUTS EN DEMOSTRACION*/
+.contenedor-cartas{
+    border: 2px solid #191919;
+    margin-top: 40px;
+}
+
+.contenedor-cartas .title-carta h3{
+    font-weight: 800;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenedor-cartas .demostracion {
+    align-items: center;
+    justify-content: center;
+    background-color: #15d49194;
+    height: 150px;
+    transition: all 0.6s ease;
+    display: flex;
+}
+
+.contenedor-cartas .color-fondo2{
+    background-color: #191919;
+}
+
+
+.contenedor-cartas .demostracion input{
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+.contenedor-cartas .color-fondo2 input{
+    border: 2px solid #191919;
+}
+
+.boton-demos:hover {
+    cursor: pointer;
+    background-color: #191919;
+    transition: all 0.6s;
+    color: white;
+}
+
+.contenedor-cartas .color-fondo2 .cursor-demos:hover{
+    background-color: #2ecc71;
+    color: #191919;
+    border: 2px solid white;
+    transition: all 0.6s;
+}
+
+.contenedor-cartas .color-fondo3{
+    background-color: #ffffffda;
+}
+
+.contenedor-cartas .color-fondo3 input{
+    border: 2px solid #5b5a5a;
+}
+
+.contenedor-cartas .color-fondo3 .padd-demos:hover{
+    padding: 30px;
+}
+
+.contenedor-cartas .color-fondo3 .border-demos:hover{
+    border: 30px solid #191919;
+}
+
+.contenedor-cartas .color-fondo3 .padd-demos:focus{
+    border: 2px solid #191919;
+}
+
+.contenedor-cartas .color-fondo3 .wid-demos:focus{
+    width: 500px;
+}
+
+.contenedor-cartas .color-fondo3 .color-demos{
+    color: red;
+}
+
+.demostracion input:focus{
+    width: 300px;
+    border: 2px solid #191919;
+    transition: all 0.6s;
+} 
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+    
+    .header .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+
+    .header .nav h1 img{
+        margin-left: 0px;
+        height: 80px;
+    }
+
+    .header .nav .lista{
+        flex-direction: column;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .header .nav .lista li:hover{
+        transform: scale(1.4,1.4);
+    }
+
+    .main {
+        margin-top: 350px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .box-contacto{
+        top: 65%;
+    }
+    
+}
+
+
+
+/*--------ESTILOS PROPIOS DEL INPUT--------*/
+
+/*CON CARET COLOR APLICADO*/
+.caret-demos{
+    caret-color: red;
+}
+
+/*CON CURSOR POINER APLICADO*/
+.cursor-demos{
+    cursor: pointer;
+}
+
+/*SIN RESIZE*/
+.textarea-demos{
+    text-align: center;
+}
+
+/*CON RESIZE APLICADO*/
+.textarea-demos2{
+    text-align: center;
+    resize: none;
+    
+    margin: 10px;
+}
+
+/*EFECTO PARA LOS PASSWORD,EMAIL*/
+.password-demos{
+    -webkit-text-security: square;
+}
+
+/*--------ESTILOS PROPIOS DEL INPUT--------*/
