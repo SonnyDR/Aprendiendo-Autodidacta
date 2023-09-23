@@ -1,0 +1,317 @@
+@import "custom.scss";
+
+//PASAJE A DESKTOP
+
+//PRIMERA SECTION DESKTOP
+.section-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 60px;
+}
+
+.section-me img {
+    object-fit: cover;
+    width: 400px;
+    max-width: 400px;
+    height: auto;
+    padding: 30px;
+}
+
+.section-me .me-content{
+    padding: 0.625rem;
+    box-shadow: 0px 2px 15px 2px $dark;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.section-me .me-content .me-title{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.section-me .me-content .me-bio{
+    padding: 5px;
+}
+//SEGUNDA SECTION DESKTOP
+
+.sobre-me{
+    margin-top: 5.5rem;
+    text-align: center;
+}
+
+.bord-me{
+    padding: 0.625rem;
+    box-shadow: 0px 2px 15px 2px $dark;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.sobre-me h2 {
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sobre-me p {
+    padding: 5px;
+}
+
+//SECTION HABILIDADES DESKTOP
+
+.sec-habilidades {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+}
+
+.sec-habilidades h2 {
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.sec-habilidades .cont-skills{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec-habilidades .cont-skills img {
+    padding: 2.25rem;
+}
+
+.sec-habilidades .cont-skills .icon{
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.sec-habilidades .cont-skills .icon{
+    background-color: $secondary;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px $dark;
+    padding: 20px;
+    margin: 15px;
+}
+
+//PROYECTOS DESKTOP
+.proyectos{
+    text-align: center;
+    margin-top: 5.5rem;
+}
+
+.proyectos .contenedor-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos h2{
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.proyectos .cont-proyectos {
+    box-shadow: 0 3px 10px $dark;
+    margin-top: 30px;
+    margin: 0px 10px 0px 10px;
+}
+
+.proyectos .cont-proyectos img{
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.proyectos .cont-proyectos h3{
+    font-weight: 800;
+}
+
+.proyectos .cont-proyectos p {
+    padding: 20px;
+}
+
+//CONTACTO DESKTOP
+
+.contacto {
+    background-color: $secondary;
+    box-shadow: 0px 5px 10px $dark;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contacto img {
+    object-fit: cover;
+    padding: 20px;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin: 0px 10px 10px 10px;
+}
+//--------------------------------------------
+//DESKTOP
+//--------------------------------------------
+
+
+
+//--------------------------------------------
+//__________________________________________
+//MOBIL-FIRST
+@media screen and (max-width: 720px) {
+
+    //PRIMERA SECTION
+    .section-me {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin: 0 auto;
+        margin-top: 56px;
+    }
+
+    .section-me img {
+        // object-fit: cover;
+        width: 100%;
+        // max-width: 400px;
+        height: auto;
+    }
+
+    // .section-me .me-content{
+    //     padding: 0.625rem;
+    //     box-shadow: 0px 2px 15px 2px $dark;
+    //     border-radius: 6px;
+    //     text-align: center;
+    // }
+
+    // .section-me .me-content .me-title{
+    //     margin-bottom: 15px;
+    //     font-weight: 800;
+    // }
+
+    // .section-me .me-content .me-bio{
+    //     padding: 0.3rem 0;
+    // }
+
+
+    //SEGUNDA SECTION
+    // .sobre-me{
+    //     margin-top: 2.5rem;
+    //     text-align: center;
+    // }
+
+    // .sobre-me h2 {
+    //     font-weight: 800;
+    // }
+
+    // .sobre-me p {
+    //     padding: 0.5rem;
+    // }
+
+    //SECTION HABILIDADES
+    // .sec-habilidades {
+    //     text-align: center;
+    //     margin: 0 auto;
+    //     margin-top: 2.5rem;
+    // }
+
+    // .sec-habilidades h2 {
+    //     font-weight: 800;
+    //     margin-bottom: 1rem;
+    // }
+
+    .sec-habilidades .cont-skills {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    // .sec-habilidades .cont-skills img {
+    //     padding: 2.25rem;
+    // }
+
+    .sec-habilidades .cont-skills .icon{
+        // width: auto;
+        height: 100px;
+        // margin: 0 auto;
+    }
+
+    // .sec-habilidades .cont-skills .icon{
+    //     background-color: $secondary;
+    //     border-radius: 11px;
+    //     box-shadow: 0 3px 10px $dark;
+    //     padding: 20px;
+    //     margin: 15px;
+    // }
+
+    //PROYECTOS
+    .proyectos{
+        // text-align: center;
+        // margin-top: 2.5rem;
+        display: block;
+    }
+
+    .proyectos .contenedor-flex{
+        display: block;
+    }
+
+    // .proyectos h2{
+    //     font-weight: 800;
+    //     margin-bottom: 2rem;
+    // }
+
+    .proyectos .cont-proyectos {
+        box-shadow: 0 3px 10px $dark;
+        margin-top: 30px;
+        margin: 0;
+    }
+
+    .proyectos .cont-proyectos img{
+        padding: 20px;
+        width: 100%;
+        // height: auto;
+        // object-fit: cover;
+    }
+
+    // .proyectos .cont-proyectos h3{
+    //     font-weight: 800;
+    // }
+
+    // .proyectos .cont-proyectos p {
+    //     padding: 20px;
+    // }
+
+    //CONTACTO
+    // .contacto {
+    //     background-color: $secondary;
+    //     box-shadow: 0px 5px 10px $dark;
+    //     margin-top: 2.5rem;
+    //     margin-bottom: 1rem;
+    //     text-align: center;
+    // }
+
+    // .contacto h2 {
+    //     font-weight: 800;
+    //     margin-bottom: 10px;
+    //     padding: 20px;
+    // }
+
+    // .contacto img {
+    //     object-fit: cover;
+    //     padding: 20px;
+    //     max-width: 100px;
+    //     width: 100%;
+    //     height: auto;
+    //     margin: 0px 10px 10px 10px;
+    // }   
+}

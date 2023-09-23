@@ -1,0 +1,15 @@
+// Variables a modificar de bootstrap
+$primary: #e73a82;
+$dark: #191919;
+$secondary: #fff;
+$danger: #e45e57;
+
+$theme-colors: (
+    "primary": $primary,
+    "dark":    $dark,
+    "secondary":$secondary,
+    "danger":   $danger,
+);
+
+//IMPORTACION DE LOS ESTILOS DE BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";
