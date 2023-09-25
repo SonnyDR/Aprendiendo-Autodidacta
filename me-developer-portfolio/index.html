@@ -163,22 +163,34 @@
                 </section>
 
                 <section class="contacto" id="contacto" data-aos="fade-up">
-                    <h2>Redes de contacto</h2>
-                    
-                    <img 
-                    src="/assets/img/instagram.svg" 
-                    alt=""
-                    >
+                    <h2>Hablemos de tu proyecto</h2>
+                    <p>Me gustaria saber sobre tu idea a realizar! Complete el formulario
+                      a continuacion o comuniquese conmigo por correo electronico a 
+                      <a target="_blank" href="mailto:alejo12arias@icloud.com">alejo12arias@icloud.com</a>
+                      para saber mas sobre su idea de proyecto.
+                    </p>
+                    <form class="box" action="https://formsubmit.co/alejo12arias@icloud.com" method="POST">
+                      <div class="cont-input">
 
-                    <img 
-                    src="/assets/img/twitter.svg" 
-                    alt=""
-                    >
+                        <input type="text" name="name" class="datos-inp inp" placeholder="Ingrese su nombre">
+                        <input type="email" name="email" class="datos-inp inp" placeholder="Ingrese su email">
+                      
+                      </div>
+                      <div class="cont-textarea">
+                        <textarea name="comments" class="datos-inp" placeholder="Como puedo ayuarte?"></textarea>
+                      </div>
+                      
 
-                    <img 
-                    src="/assets/img/mail.svg" 
-                    alt=""
-                    >
+                      <input type="submit" class="btn-inp" value="Enviar">
+
+                      <!-- //Disenio para el correo enviado.// -->
+                      <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html#contacto">
+                      <input type="hidden" name="_captcha" value="false">
+
+
+                      
+                    </form>
 
                 </section>
             </article>

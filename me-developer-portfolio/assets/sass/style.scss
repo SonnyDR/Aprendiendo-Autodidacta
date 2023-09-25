@@ -141,7 +141,7 @@
     background-color: $secondary;
     box-shadow: 0px 5px 10px $dark;
     margin-top: 5.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -151,14 +151,85 @@
     padding: 20px;
 }
 
-.contacto img {
-    object-fit: cover;
-    padding: 20px;
-    max-width: 100px;
-    width: 100%;
-    height: auto;
-    margin: 0px 10px 10px 10px;
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
 }
+
+.contacto p{
+    padding: 0px 20px 0px 20px;
+}
+
+.box .cont-input{
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+.box .cont-input input{
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    box-shadow: 0 5px 10px $dark;
+    background-color: $secondary;
+}
+
+.box .datos-inp{
+    padding: 10px;
+    outline: 0;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 10px $dark;
+}
+
+.box .cont-textarea{
+    width: 100%;
+}
+
+.box .cont-textarea textarea{
+    text-align: center;
+    resize: none;
+    width: 100%;
+    max-width: 700px;
+    height: 150px;
+
+    background-color: $secondary;
+}
+
+.box .btn-inp{
+    margin-top: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 7px;
+    width: 100px;
+    color: $dark;
+    background-color: $secondary;
+    box-shadow: 0 5px 10px $dark;
+}
+
+.box .cont-input input:focus{
+    background-color: $dark;
+    color: $secondary;
+    transition: all 1s;
+}
+
+.box .cont-textarea textarea:focus{
+    background-color: $dark;
+    color: $secondary;
+    transition: all 1s;
+}
+
+.box .btn-inp:hover {
+    background-color: $dark;
+    color: $secondary;
+    transition: all 1s;
+}
+
+
 //--------------------------------------------
 //DESKTOP
 //--------------------------------------------
@@ -188,71 +259,16 @@
         height: auto;
     }
 
-    // .section-me .me-content{
-    //     padding: 0.625rem;
-    //     box-shadow: 0px 2px 15px 2px $dark;
-    //     border-radius: 6px;
-    //     text-align: center;
-    // }
-
-    // .section-me .me-content .me-title{
-    //     margin-bottom: 15px;
-    //     font-weight: 800;
-    // }
-
-    // .section-me .me-content .me-bio{
-    //     padding: 0.3rem 0;
-    // }
-
-
-    //SEGUNDA SECTION
-    // .sobre-me{
-    //     margin-top: 2.5rem;
-    //     text-align: center;
-    // }
-
-    // .sobre-me h2 {
-    //     font-weight: 800;
-    // }
-
-    // .sobre-me p {
-    //     padding: 0.5rem;
-    // }
-
-    //SECTION HABILIDADES
-    // .sec-habilidades {
-    //     text-align: center;
-    //     margin: 0 auto;
-    //     margin-top: 2.5rem;
-    // }
-
-    // .sec-habilidades h2 {
-    //     font-weight: 800;
-    //     margin-bottom: 1rem;
-    // }
-
     .sec-habilidades .cont-skills {
         width: auto;
         margin: 0 auto;
     }
-
-    // .sec-habilidades .cont-skills img {
-    //     padding: 2.25rem;
-    // }
 
     .sec-habilidades .cont-skills .icon{
         // width: auto;
         height: 100px;
         // margin: 0 auto;
     }
-
-    // .sec-habilidades .cont-skills .icon{
-    //     background-color: $secondary;
-    //     border-radius: 11px;
-    //     box-shadow: 0 3px 10px $dark;
-    //     padding: 20px;
-    //     margin: 15px;
-    // }
 
     //PROYECTOS
     .proyectos{
@@ -264,11 +280,6 @@
     .proyectos .contenedor-flex{
         display: block;
     }
-
-    // .proyectos h2{
-    //     font-weight: 800;
-    //     margin-bottom: 2rem;
-    // }
 
     .proyectos .cont-proyectos {
         box-shadow: 0 3px 10px $dark;
@@ -283,35 +294,13 @@
         // object-fit: cover;
     }
 
-    // .proyectos .cont-proyectos h3{
-    //     font-weight: 800;
-    // }
-
-    // .proyectos .cont-proyectos p {
-    //     padding: 20px;
-    // }
-
-    //CONTACTO
-    // .contacto {
-    //     background-color: $secondary;
-    //     box-shadow: 0px 5px 10px $dark;
-    //     margin-top: 2.5rem;
-    //     margin-bottom: 1rem;
-    //     text-align: center;
-    // }
-
-    // .contacto h2 {
-    //     font-weight: 800;
-    //     margin-bottom: 10px;
-    //     padding: 20px;
-    // }
-
-    // .contacto img {
-    //     object-fit: cover;
-    //     padding: 20px;
-    //     max-width: 100px;
-    //     width: 100%;
-    //     height: auto;
-    //     margin: 0px 10px 10px 10px;
-    // }   
+    //CONTACTOS
+    
+    .box .cont-input input{
+        // text-align: center;
+        // width: 100%;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+ 
 }
