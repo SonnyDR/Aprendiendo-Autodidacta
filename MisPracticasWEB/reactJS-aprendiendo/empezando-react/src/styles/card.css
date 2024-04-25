@@ -1,0 +1,11 @@
+.card-box{
+    border: 5px solid black;
+    padding: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.card-box h1{
+    color: red;
+    
+}
