@@ -69,7 +69,7 @@ namespace Personas
                     }
                     catch (MySqlException e)
                     {
-                        Console.WriteLine("ERROR AL INGRESAR LOS DATOS" + e.Message);
+                        Console.WriteLine("ERROR AL INGRESAR LOS DATOS" + e.Message);               
                     }
                     finally
                     {
