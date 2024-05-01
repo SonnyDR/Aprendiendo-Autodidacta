@@ -15,7 +15,7 @@ namespace Conexion
         {
             // Configuración de la cadena de conexión
             string server = "localhost";
-            string database = "FAMOSOS";
+            string database = "login";
             string uid = "root";
             string password = "alejoarias1";
 
@@ -36,9 +36,7 @@ namespace Conexion
                 return null;
 
             }
-            finally {
-                connection.Close();
-            }
+
         }
     }
 }

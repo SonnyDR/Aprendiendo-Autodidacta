@@ -45,42 +45,40 @@ namespace Personas
         }
 
         //METODO PARA INGRESAR DATOS A LA BASE DE DATOS
-        public void ingresarDatos() {
+        public void ingresarDatos(Persona persona) {
 
-            try
+            using (var con = conex.ConexionBD())
             {
-
-                using (var con = conex.ConexionBD())
+                if (con == null)
                 {
+                    Console.WriteLine("Fallo la conexión con la base de datos.");
+                    return;
+                }
 
-                    string query = "INSERT INTO usuarios (nombre, email, contrasenia) VALUES (@nombre, @email, @contrasenia);";
+                string query = "INSERT INTO persona (nombre, email, contrasenia) VALUES (@nombre, @email, @contrasenia);";
+                using (var cmd = new MySqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@nombre", Nombre);
+                    cmd.Parameters.AddWithValue("@email", Email);
+                    cmd.Parameters.AddWithValue("@contrasenia", Pass);
 
-                    if (con != null)
+                    try
                     {
-
-                        using (var cmd = new MySqlCommand(query, con))
-                        {
-
-                            cmd.Parameters.AddWithValue("@nombre", nombre);
-                            cmd.Parameters.AddWithValue("@email", email);
-                            cmd.Parameters.AddWithValue("@contrasenia", pass);
-
-                            cmd.ExecuteNonQuery();
-                        }
-
+                        cmd.ExecuteNonQuery();
+                        Console.WriteLine("DATOS INGRESADOS");
                     }
-
-                    Console.WriteLine("Ingresador correctamente");
-
+                    catch (MySqlException e)
+                    {
+                        Console.WriteLine("ERROR AL INGRESAR LOS DATOS" + e.Message);
+                    }
+                    finally
+                    {
+                        con.Close();
+                    }
                 }
             }
-            catch(Exception e) {
-                Console.WriteLine("Error a ingresar los datos" + e.Message);
-            }
-
-            
 
         }
 
+        }
     }
-}
