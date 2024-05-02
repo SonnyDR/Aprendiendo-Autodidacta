@@ -32,33 +32,86 @@ namespace frmLogin
         private void btnRegistr_Click(object sender, EventArgs e)
         {
 
-            Persona personaDato = new Persona();
+            if (campoVaciosVerificarRegister())
+            {
 
-            String nombre = txtNombre.Text;
-            String email = txtEmail.Text;
-            String pass = txtContra.Text;
+                lblInformacion.Text = "LOS CAMPOS SE ENCUENTRAN VACIOS";
 
-            String mostrarLeable = "";
+            }
+            else if (verificarCaracteres())
+            {
 
-            personaDato = new Persona(nombre,email,pass);
-            lblInformacion.Text = personaDato.ingresarDatos(personaDato, mostrarLeable);
-        }
+                lblInformacion.Text = "CAMPO EXCEDIDO A 30 CARACTERES";
 
-        //METODO PARA LIMITAR LOS CARACTERES
-        public Boolean limitarDatos() {
-            return true;
+            }
+
+            else {
+
+                Persona personaDato = new Persona();
+                String nombre = txtNombre.Text;
+                String email = txtEmail.Text;
+                String pass = txtContra.Text;
+
+                String mostrarLeable = "";
+
+                personaDato = new Persona(nombre, email, pass);
+                lblInformacion.Text = personaDato.ingresarDatos(personaDato, mostrarLeable);
+
+
+            } 
         }
 
         //BOTON DE LOGIN
         private void btnIngresarlogin_Click(object sender, EventArgs e)
         {
 
-            String email = txtEmailLogin.Text;
-            String pass = txtContraLogin.Text;
+            if (camposVaciosVerificarLogin())
+            {
 
-            Persona persona = new Persona();
-            lblInformacion.Text = persona.compararLogin(email,pass);
+                lblInformacion.Text = "UN CAMPO ESTA VACIO";
+
+            }
+            else if (verificarCaracteres())
+            {
+
+                lblInformacion.Text = "CAMPO EXCEDIDO A 30 CARACTERES";
+
+            }
+            else {
+
+                String email = txtEmailLogin.Text;
+                String pass = txtContraLogin.Text;
+
+                Persona persona = new Persona();
+                lblInformacion.Text = persona.compararLogin(email, pass);
+
+            }
             
         }
+
+        //METODO PARA LIMITAR LOS CARACTERES
+        public Boolean camposVaciosVerificarLogin()
+        {
+            //ESTO ES PARA VERIFICAR SI LOS CAMPOS ESTAN VACIOS PARA EL LOGIN
+            return String.IsNullOrWhiteSpace(txtEmailLogin.Text)
+                || String.IsNullOrWhiteSpace(txtContraLogin.Text);
+        }
+
+        public Boolean campoVaciosVerificarRegister() {
+
+            //ESTO ES PARA VERIFICAR SI LOS CAMPOS ESTAN VACIOS PARA EL REGISTER
+            return  String.IsNullOrWhiteSpace(txtNombre.Text)
+                    || String.IsNullOrWhiteSpace(txtEmail.Text)
+                    || String.IsNullOrWhiteSpace(txtContra.Text);
+        }
+
+        public Boolean verificarCaracteres() {
+            return(txtNombre.Text.Length > 30
+                || txtEmail.Text.Length > 30
+                || txtContra.Text.Length > 30
+                || txtEmailLogin.Text.Length > 30
+                || txtContraLogin.Text.Length > 30);
+        }
+
     }
 }

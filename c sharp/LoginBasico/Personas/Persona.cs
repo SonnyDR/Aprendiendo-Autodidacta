@@ -121,7 +121,7 @@ namespace Personas
                 }
                 catch (MySqlException ex)
                 {
-                    return "ERROR EN LA CONEXION." + ex.StackTrace;
+                    return "ERROR EN LA CONEXION." + ex.Message;
                 }
                 finally {
 
