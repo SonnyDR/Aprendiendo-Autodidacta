@@ -200,6 +200,7 @@
             this.btnIngresarlogin.TabIndex = 14;
             this.btnIngresarlogin.Text = "INGRESAR";
             this.btnIngresarlogin.UseVisualStyleBackColor = true;
+            this.btnIngresarlogin.Click += new System.EventHandler(this.btnIngresarlogin_Click);
             // 
             // label10
             // 
@@ -224,6 +225,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Menu;
             this.label13.Location = new System.Drawing.Point(68, 316);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(233, 18);
@@ -232,19 +234,20 @@
             // 
             // lblInformacion
             // 
-            this.lblInformacion.AutoSize = true;
             this.lblInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblInformacion.Location = new System.Drawing.Point(168, 377);
+            this.lblInformacion.ForeColor = System.Drawing.Color.Brown;
+            this.lblInformacion.Location = new System.Drawing.Point(28, 375);
             this.lblInformacion.Name = "lblInformacion";
-            this.lblInformacion.Size = new System.Drawing.Size(28, 16);
+            this.lblInformacion.Size = new System.Drawing.Size(310, 16);
             this.lblInformacion.TabIndex = 18;
             this.lblInformacion.Text = ". . .";
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(754, 475);
             this.Controls.Add(this.lblInformacion);

@@ -38,9 +38,27 @@ namespace frmLogin
             String email = txtEmail.Text;
             String pass = txtContra.Text;
 
-            personaDato = new Persona(nombre,email,pass);
+            String mostrarLeable = "";
 
-            personaDato.ingresarDatos(personaDato);
+            personaDato = new Persona(nombre,email,pass);
+            lblInformacion.Text = personaDato.ingresarDatos(personaDato, mostrarLeable);
+        }
+
+        //METODO PARA LIMITAR LOS CARACTERES
+        public Boolean limitarDatos() {
+            return true;
+        }
+
+        //BOTON DE LOGIN
+        private void btnIngresarlogin_Click(object sender, EventArgs e)
+        {
+
+            String email = txtEmailLogin.Text;
+            String pass = txtContraLogin.Text;
+
+            Persona persona = new Persona();
+            lblInformacion.Text = persona.compararLogin(email,pass);
+            
         }
     }
 }
