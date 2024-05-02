@@ -38,6 +38,12 @@ namespace frmLogin
                 lblInformacion.Text = "LOS CAMPOS SE ENCUENTRAN VACIOS";
 
             }
+            else if (!verificarEmailRegister())
+            {
+
+                lblInformacion.Text = "EL EMAIL NO CONTIENE @";
+            }
+
             else if (verificarCaracteres())
             {
 
@@ -65,17 +71,20 @@ namespace frmLogin
         private void btnIngresarlogin_Click(object sender, EventArgs e)
         {
 
-            if (camposVaciosVerificarLogin())
+            if (!camposVaciosVerificarLogin())
             {
 
                 lblInformacion.Text = "UN CAMPO ESTA VACIO";
 
             }
-            else if (verificarCaracteres())
+            else if (verificarEmailogin())
             {
 
                 lblInformacion.Text = "CAMPO EXCEDIDO A 30 CARACTERES";
 
+            } else if (!verificarCaracteres()) {
+
+                lblInformacion.Text = "EL EMAIL NO CONTIENE @";
             }
             else {
 
@@ -113,5 +122,15 @@ namespace frmLogin
                 || txtContraLogin.Text.Length > 30);
         }
 
+        public Boolean verificarEmailRegister() {
+
+            return txtEmail.Text.Contains("@");
+        }
+
+        public Boolean verificarEmailogin()
+        {
+
+            return txtEmailLogin.Text.Contains("@");
+        }
     }
 }
